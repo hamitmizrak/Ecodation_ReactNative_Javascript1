@@ -1,5 +1,5 @@
 #param_id{
-    color:#af9;
+    color:rgb(44, 252, 3);
     background-color: black;
     padding:15px;
     text-align: justify;
@@ -8,4 +8,27 @@
     word-spacing: 2px;
     text-decoration: overline;
     text-transform: uppercase;
+    text-shadow: 0.1px 0.1px rgba(255,255,255,0.8);
+    transition: 3s all;
+}
+
+#param_id:hover{
+    color:black;
+    background-color: rgb(44, 252, 3);
+    cursor: pointer;
+    /* display: none; */
+}
+
+.div_class{
+    background-color: black;
+    color:white;
+    width: 24%; 
+    height: 50px;
+    display: inline-block;
+    padding: 10px;
+    float:right;
+    margin-right: 2px;
+    border:1px solid red;
+    border-radius: 4%;
+    box-shadow: 1px 1px 2px 0.5px rgba(0,0,0,0.8);
 }
