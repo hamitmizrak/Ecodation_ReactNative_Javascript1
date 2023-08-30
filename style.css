@@ -66,4 +66,20 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0.8;
+}
+
+#back_to_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    color:white;
+    padding:6px;
+    width: 45px;
+    margin-right: 5px;
+    border-radius: 8%;
+}
+#back_to_top:hover{
+    opacity: 0.7;
 }
