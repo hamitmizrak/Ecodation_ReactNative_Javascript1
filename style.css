@@ -83,3 +83,10 @@ header{
 #back_to_top:hover{
     opacity: 0.7;
 }
+
+#form_id input[type="text"]{
+    background-color: blueviolet;
+    color:white;
+    border-radius: 5%;
+    width: 100%;
+}
