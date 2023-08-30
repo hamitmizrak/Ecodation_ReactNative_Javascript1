@@ -32,3 +32,24 @@
     border-radius: 4%;
     box-shadow: 1px 1px 2px 0.5px rgba(0,0,0,0.8);
 }
+
+ul {
+    list-style-type:none ;
+}
+
+ul li {
+    display :inline-block;
+    border: 1px solid black;
+    padding:4px;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color:white;
+    transition: 3s all;
+}
+
+ul li:hover{
+    background-color: white;
+    color:blueviolet;  
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.8);
+}
