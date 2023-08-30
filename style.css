@@ -33,7 +33,7 @@
     box-shadow: 1px 1px 2px 0.5px rgba(0,0,0,0.8);
 }
 
-ul {
+/* ul {
     list-style-type:none ;
 }
 
@@ -52,7 +52,7 @@ ul li:hover{
     color:blueviolet;  
     transform: rotate(360deg);
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,.8);
-}
+} */
 
 .my_image{
     max-width: 100%;
