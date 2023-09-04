@@ -361,7 +361,6 @@ switchMultipleExamples();
 // sonsuz for 
 // for(;;){}
 
-
 // while
 (() => {
     let i = 1;
@@ -401,6 +400,8 @@ switchMultipleExamples();
 // DIZI
 // OBJECT
 // Callback, Promise, Async-await
+// ES5
+// ES6
 ////////////////////////////////////////////
 
 
