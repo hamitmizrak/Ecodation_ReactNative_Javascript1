@@ -408,6 +408,8 @@ switchMultipleExamples();
 // TRY CATCH
 // DIZI
 // OBJECT
+
+// normal, anonymous, arrow , immedia function
 // Callback, Promise, Async-await
 // ES5
 // ES6
