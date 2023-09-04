@@ -172,27 +172,27 @@
 // console.log(sayi2+20);
 
 ////////////////////////////////////////////
-// STRING
-let kelime="JS öğreniyorum JS ";
-console.log(kelime);
-console.log(kelime.length);
-console.log(kelime.trim().length);
+// // STRING
+// let kelime="JS öğreniyorum JS ";
+// console.log(kelime);
+// console.log(kelime.length);
+// console.log(kelime.trim().length);
 
-console.log(kelime.startsWith("JS"));
-console.log(kelime.endsWith(" "));
+// console.log(kelime.startsWith("JS"));
+// console.log(kelime.endsWith(" "));
 
-console.log(kelime.toLowerCase());
-console.log(kelime.toUpperCase());
+// console.log(kelime.toLowerCase());
+// console.log(kelime.toUpperCase());
 
-console.log(kelime.concat("INC"));
+// console.log(kelime.concat("INC"));
 
-console.log(kelime.substring(3));
-console.log(kelime.substring(0,3));
+// console.log(kelime.substring(3));
+// console.log(kelime.substring(0,3));
 
-console.log(kelime.charAt(3).toUpperCase());
+// console.log(kelime.charAt(3).toUpperCase());
 
-console.log(kelime.indexOf("JS"));
-console.log(kelime.lastIndexOf("JS"));
+// console.log(kelime.indexOf("JS"));
+// console.log(kelime.lastIndexOf("JS"));
 
 // ÖDEV NOT:5 adımı beraber yapalım
 // kullanıcı tarafından girilen bir kelimenin (prompt)
@@ -211,7 +211,33 @@ console.log(kelime.lastIndexOf("JS"));
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
 ////////////////////////////////////////////
-// FUNCTION
+// FUNCTION 
+// 1 retursuz Parametresiz
+function retursuzParametresiz(){
+    console.log("retursuz Parametresiz");
+}
+retursuzParametresiz();
+
+// 2 retursuz Parametreli
+function retursuzParametreli(name){
+    console.log("retursuz Parametreli "+name);
+}
+retursuzParametreli("Hamit Mızrak")
+
+
+// 3 returlı Parametresiz
+function returluParametresiz(){
+    return "returlu Parametresiz";
+}
+let data3= returluParametresiz();
+console.log(data3);
+
+// 4 returlı Parametresiz
+function returluParametreli(name,surname,language){
+    return `ADI: ${name} SOYADI:${surname} DİL: ${language} `;
+}
+let data4= returluParametreli("Hamit","Mızrak","JS");
+console.log(data4);
 
 ////////////////////////////////////////////
 // CONDITION
