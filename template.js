@@ -290,7 +290,7 @@ ifElseTernaryExamples()
 
 // if else if else
 const ifElseMultipleExamples = () => {
-    let number = 5;
+    let number = 59;
     if (number == "1") {
         console.log("1");
     } else if (number === 2) {
@@ -338,13 +338,38 @@ switchMultipleExamples();
 // return  : function kırar çalıştırmaz
 // continue: 1 kere o şarta çalışmaz sonra döngüye devam eder.
 
+// ÖDEV
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal  function ile yazınız)
+
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
+
 ////////////////////////////////////////////
 // LOOP
 // for
 // while
 // do while
 
+// SORU 1<=userData<=50 
+// 1 ile Kullanıcı tarafından alınan bitiş sayısına kadar toplama yapan Algoritma örneği 
+// Örnek: 1<=user 1+2+3+...userdatası
+// Eğer Bu sayılardan 7 sayıyı varsa bunu toplayama dahil etmesin (continue)
+// Bu sayının en fazla 50'e kadar toplama yapabilir (break)
+// bu sayılardan çift olanların kaç tane, sayıların kendisi ve toplamları nedir ?
+// bu sayılardan tek olanların kaç tane, sayıların kendisi ve toplamları nedir ? 
+// secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
+// Dikkat: Bu algoritmayı Arrow Function ile yapalım.
+// (Clean code kuralları çercevesinde ) algoritma yapan program?
+
+
 ////////////////////////////////////////////
+
+// TRY CATCH
 // DIZI
 // OBJECT
 
