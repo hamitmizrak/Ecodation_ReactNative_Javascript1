@@ -384,6 +384,15 @@ switchMultipleExamples();
     } while (i <= 10);
 })();
 
+// arrow function
+// clean code 
+// conditional(if else)
+// loop (for-while)
+
+// return  : metotun çalışmasını durdurur
+// break   : döngünün çalışmasını durdurur
+// continue: sadece 1 kereye mahsus durur sonra devam eder.
+
 // SORU 1<=userData<=50
 // 1 ile Kullanıcı tarafından alınan bitiş sayısına kadar toplama yapan Algoritma örneği
 // Örnek: 1<=user 1+2+3+...userdatası
@@ -393,7 +402,7 @@ switchMultipleExamples();
 // bu sayılardan tek olanların kaç tane, sayıların kendisi ve toplamları nedir ?
 // secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
 // Dikkat: Bu algoritmayı Arrow Function ile yapalım.
-// (Clean code kuralları çercevesinde ) algoritma yapan program?
+// (Clean code kuralları çercevesinde ) algoritma yapan program ?
 
 ////////////////////////////////////////////
 // TRY CATCH
