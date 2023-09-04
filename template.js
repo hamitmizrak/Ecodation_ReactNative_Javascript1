@@ -224,7 +224,6 @@ function retursuzParametreli(name){
 }
 retursuzParametreli("Hamit Mızrak")
 
-
 // 3 returlı Parametresiz
 function returluParametresiz(){
     return "returlu Parametresiz";
@@ -238,6 +237,34 @@ function returluParametreli(name,surname,language){
 }
 let data4= returluParametreli("Hamit","Mızrak","JS");
 console.log(data4);
+////////////////////////////////////////////
+// normal
+function normalFunction(){
+    console.log("Normal Function");
+}
+normalFunction();
+
+// anonymous
+let anonymousFunction= function(){
+    console.log("anonymous Function");
+}
+anonymousFunction();
+
+// arrowFunction
+let arrowFunction= ()=>{
+    console.log("arrowFunction");
+}
+arrowFunction();
+
+// Immedia Function
+(function(){
+    console.log("Immedia Function Anonymous");
+})();
+
+// Immedia Function
+(()=>{
+    console.log("Immedia Function Arrow");
+})();
 
 ////////////////////////////////////////////
 // CONDITION
