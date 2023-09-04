@@ -115,8 +115,8 @@
 
 // Örnek-2
 /* 
-    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
-    Formül: (derece*9/5)+32   
+    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
+    Formül: (derece*9/5)+32   
 */
 // let degree=0,fahranhayt=0;
 // degree=Number(prompt("Lütfen Dereceyi giriniz"));
@@ -213,66 +213,141 @@
 ////////////////////////////////////////////
 // FUNCTION 
 // 1 retursuz Parametresiz
-function retursuzParametresiz(){
-    console.log("retursuz Parametresiz");
-}
-retursuzParametresiz();
+// function retursuzParametresiz(){
+//     console.log("retursuz Parametresiz");
+// }
+// retursuzParametresiz();
 
-// 2 retursuz Parametreli
-function retursuzParametreli(name){
-    console.log("retursuz Parametreli "+name);
-}
-retursuzParametreli("Hamit Mızrak")
+// // 2 retursuz Parametreli
+// function retursuzParametreli(name){
+//     console.log("retursuz Parametreli "+name);
+// }
+// retursuzParametreli("Hamit Mızrak")
 
-// 3 returlı Parametresiz
-function returluParametresiz(){
-    return "returlu Parametresiz";
-}
-let data3= returluParametresiz();
-console.log(data3);
+// // 3 returlı Parametresiz
+// function returluParametresiz(){
+//     return "returlu Parametresiz";
+// }
+// let data3= returluParametresiz();
+// console.log(data3);
 
-// 4 returlı Parametresiz
-function returluParametreli(name,surname,language){
-    return `ADI: ${name} SOYADI:${surname} DİL: ${language} `;
-}
-let data4= returluParametreli("Hamit","Mızrak","JS");
-console.log(data4);
-////////////////////////////////////////////
+// // 4 returlı Parametresiz
+// function returluParametreli(name,surname,language){
+//     return `ADI: ${name} SOYADI:${surname} DİL: ${language} `;
+// }
+// let data4= returluParametreli("Hamit","Mızrak","JS");
+// console.log(data4);
+// ////////////////////////////////////////////
 // normal
-function normalFunction(){
-    console.log("Normal Function");
-}
-normalFunction();
+// function normalFunction(){
+//     console.log("Normal Function");
+// }
+// normalFunction();
 
 // anonymous
-let anonymousFunction= function(){
-    console.log("anonymous Function");
-}
-anonymousFunction();
+// let anonymousFunction= function(){
+//     console.log("anonymous Function");
+// }
+// anonymousFunction();
 
 // arrowFunction
-let arrowFunction= ()=>{
-    console.log("arrowFunction");
-}
-arrowFunction();
+// let arrowFunction= ()=>{
+//     console.log("arrowFunction");
+// }
+// arrowFunction();
 
 // Immedia Function
-(function(){
-    console.log("Immedia Function Anonymous");
-})();
+// (function(){
+//     console.log("Immedia Function Anonymous");
+// })();
 
 // Immedia Function
-(()=>{
-    console.log("Immedia Function Arrow");
-})();
+// (()=>{
+//     console.log("Immedia Function Arrow");
+// })();
 
 ////////////////////////////////////////////
 // CONDITION
+// if else
+const ifElseExamples = () => {
+    let number = 15;
+    if (number > 0) {
+        console.log("pozitif");
+    } else {
+        console.log("negatif");
+    }
+}
+ifElseExamples();
+
+// ternary
+const ifElseTernaryExamples = () => {
+    let number = 15;
+    let result = (number > 0) ? "pozitif" : "negatif";
+    console.log(result);
+
+}
+ifElseTernaryExamples()
+
+// if else if else
+const ifElseMultipleExamples = () => {
+    let number = 5;
+    if (number == "1") {
+        console.log("1");
+    } else if (number === 2) {
+        console.log("2");
+    } else if (number === 3) {
+        console.log("3");
+    } else if (number === 4) {
+        console.log("4");
+    } else if (number === 5) {
+        console.log("5");
+    } else {
+        console.log("1<=X<=5 dışındadır");
+    }
+}
+ifElseMultipleExamples();
+
+// switch case
+const switchMultipleExamples = () => {
+    let number = 5;
+
+    switch (number) {
+        case 1:
+            console.log("1");
+            break;
+        case 3:
+            console.log("3");
+            break;
+        case 4:
+            console.log("4");
+            break;
+        case 2:
+            console.log("2");
+            break;
+        case 5:
+            console.log("5");
+            break;
+        default:
+            console.log("1<=X<=5 dışındadır");
+            break;
+    }
+}
+switchMultipleExamples(); 
+
+// break   : döngüyü kırar çalıştırmaz
+// return  : function kırar çalıştırmaz
+// continue: 1 kere o şarta çalışmaz sonra döngüye devam eder.
+
+////////////////////////////////////////////
 // LOOP
+// for
+// while
+// do while
 
 ////////////////////////////////////////////
 // DIZI
 // OBJECT
+
 ////////////////////////////////////////////
 
 
