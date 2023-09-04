@@ -165,22 +165,61 @@
 // console.log(bilimselGosterim2);
 ////////////////////////////////////////////
 // CAST
-let sayi=Number("10");
-console.log(sayi+20);
+// let sayi=Number("10");
+// console.log(sayi+20);
 
-let sayi2=String("10");
-console.log(sayi2+20);
+// let sayi2=String("10");
+// console.log(sayi2+20);
 
 ////////////////////////////////////////////
 // STRING
+let kelime="JS öğreniyorum JS ";
+console.log(kelime);
+console.log(kelime.length);
+console.log(kelime.trim().length);
+
+console.log(kelime.startsWith("JS"));
+console.log(kelime.endsWith(" "));
+
+console.log(kelime.toLowerCase());
+console.log(kelime.toUpperCase());
+
+console.log(kelime.concat("INC"));
+
+console.log(kelime.substring(3));
+console.log(kelime.substring(0,3));
+
+console.log(kelime.charAt(3).toUpperCase());
+
+console.log(kelime.indexOf("JS"));
+console.log(kelime.lastIndexOf("JS"));
+
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+// let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
 ////////////////////////////////////////////
 // FUNCTION
+
+////////////////////////////////////////////
 // CONDITION
 // LOOP
+
+////////////////////////////////////////////
 // DIZI
 // OBJECT
-
 ////////////////////////////////////////////
 
 
