@@ -29,17 +29,17 @@
 
 //////////////////////////////////////////
 // Common Rules
-let degiskenAdi="JS öğreniyorum"
-console.log(degiskenAdi);
+// let degiskenAdi="JS öğreniyorum"
+// console.log(degiskenAdi);
 
-let degiskenAdi44="JS öğreniyorum"
-console.log(degiskenAdi44);
+// let degiskenAdi44="JS öğreniyorum"
+// console.log(degiskenAdi44);
 
-let _degiskenAdi="JS öğreniyorum"
-console.log(_degiskenAdi);
+// let _degiskenAdi="JS öğreniyorum"
+// console.log(_degiskenAdi);
 
-let $degiskenAdi="JS öğreniyorum"
-console.log($degiskenAdi);
+// let $degiskenAdi="JS öğreniyorum"
+// console.log($degiskenAdi);
 
 //let ~|/44degiskenAdiüğşçö="JS öğreniyorum"
 
@@ -53,11 +53,11 @@ console.log($degiskenAdi);
 //////////////////////////////////////// 
 
 // Operators
-console.log(10+25);
-console.log(10-25);
-console.log(10*25);
-console.log(10/3);
-console.log(10%3);
+// console.log(10+25);
+// console.log(10-25);
+// console.log(10*25);
+// console.log(10/3);
+// console.log(10%3);
 
 // + ++ 
 // && VE 
@@ -76,35 +76,35 @@ console.log(10%3);
 ////////////////////////////////////////////
 
 // undefined 
-let data10;
-console.log(data10);
+// let data10;
+// console.log(data10);
 
-// NaN: Not A Number
-console.log(10/10);
-console.log(10/"10");
-console.log(10/"asd");
+// // NaN: Not A Number
+// console.log(10/10);
+// console.log(10/"10");
+// console.log(10/"asd");
 
-// infinity
-console.log(0/45);
-console.log(45/0);
-
-////////////////////////////////////////////
-
-// Math
-console.log(Math.min(1,5,2,-100,500));
-console.log(Math.max(1,5,2,-100,500));
-console.log(Math.sqrt(25));
-console.log(Math.pow(2,5));
-console.log(Math.abs(-100));
-console.log(Math.sin(45));
-console.log(Math.asin(-1));
-console.log(Math.floor(5.9));
-console.log(Math.ceil(5.1));
-console.log(Math.round(3.4));
-console.log(Math.round(3.5));
-console.log(Math.floor(Math.random()*9+1));
+// // infinity
+// console.log(0/45);
+// console.log(45/0);
 
 ////////////////////////////////////////////
+
+// // Math
+// console.log(Math.min(1,5,2,-100,500));
+// console.log(Math.max(1,5,2,-100,500));
+// console.log(Math.sqrt(25));
+// console.log(Math.pow(2,5));
+// console.log(Math.abs(-100));
+// console.log(Math.sin(45));
+// console.log(Math.asin(-1));
+// console.log(Math.floor(5.9));
+// console.log(Math.ceil(5.1));
+// console.log(Math.round(3.4));
+// console.log(Math.round(3.5));
+// console.log(Math.floor(Math.random()*9+1));
+////////////////////////////////////////////
+
 
 // Örnek-1
 // Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ? (prompt)
@@ -145,6 +145,36 @@ console.log(Math.floor(Math.random()*9+1));
 // s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ? (ceil(sqrt(max)))
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ? (abs(min))
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım(pow(min,max))
+
+
+////////////////////////////////////////////
+
+// SAYILAR
+// let sayilar=44;
+// console.log(sayilar);
+// console.log(typeof sayilar);
+
+// let sayilar2=44.23;
+// console.log(sayilar2);
+// console.log(typeof sayilar2);
+
+// let bilimselGosterim1=12000;
+// console.log(bilimselGosterim1);
+
+// let bilimselGosterim2=12E+3;
+// console.log(bilimselGosterim2);
+////////////////////////////////////////////
+// CAST
+let sayi=Number("10");
+console.log(sayi+20);
+
+let sayi2=String("10");
+console.log(sayi2+20);
+
+////////////////////////////////////////////
+// STRING
+
+////////////////////////////////////////////
 
 
 
