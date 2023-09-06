@@ -277,7 +277,7 @@ const ifElseExamples = () => {
         console.log("negatif");
     }
 }
-ifElseExamples();
+//ifElseExamples();
 
 // ternary
 const ifElseTernaryExamples = () => {
@@ -305,7 +305,7 @@ const ifElseMultipleExamples = () => {
         console.log("1<=X<=5 dışındadır");
     }
 }
-ifElseMultipleExamples();
+//ifElseMultipleExamples();
 
 // switch case
 const switchMultipleExamples = () => {
@@ -332,7 +332,7 @@ const switchMultipleExamples = () => {
             break;
     }
 }
-switchMultipleExamples();
+//switchMultipleExamples();
 
 // break   : döngüyü kırar çalıştırmaz
 // return  : function kırar çalıştırmaz
@@ -352,37 +352,38 @@ switchMultipleExamples();
 ////////////////////////////////////////////
 // LOOP
 // for
-(() => {
-    for (let i = 1; i <= 10; i++) {
-        document.write(i + " ")
-    }
-    document.write("<br/>")
-})();
+// (() => {
+//     for (let i = 1; i <= 10; i++) {
+//         document.write(i + " ")
+//     }
+//     document.write("<br/>")
+// })();
 // sonsuz for 
 // for(;;){}
 
 // while
-(() => {
-    let i = 1;
-    while (i <= 10) {
-        document.write(i + " ")
-        //i++;
-        //i=i+1;
-        i += 1;
-    }
-    document.write("<br/>")
-})();
+// (() => {
+//     let i = 1;
+//     while (i <= 10) {
+//         document.write(i + " ")
+//         //i++;
+//         //i=i+1;
+//         i += 1;
+//     }
+//     document.write("<br/>")
+// })();
 // sonsuz while 
 // while(true){}
 
 // do while
-(() => {
-    let i = 1;
-    do {
-        document.write(i + " ")
-        i = i + 1;
-    } while (i <= 10);
-})();
+// (() => {
+//     let i = 1;
+//     do {
+//         document.write(i + " ")
+//         i = i + 1;
+//     } while (i <= 10);
+// })();
+////////////////////////////////////////////
 
 // arrow function
 // clean code 
@@ -396,18 +397,76 @@ switchMultipleExamples();
 // SORU 1<=userData<=50
 // 1 ile Kullanıcı tarafından alınan bitiş sayısına kadar toplama yapan Algoritma örneği
 // Örnek: 1<=user 1+2+3+...userdatası
-// Eğer Bu sayılardan 7 sayıyı varsa bunu toplayama dahil etmesin (continue)
+// secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
 // Bu sayının en fazla 50'e kadar toplama yapabilir (break)
+// Eğer Bu sayılardan 7 sayıyı varsa bunu toplayama dahil etmesin (continue)
+
 // bu sayılardan çift olanların kaç tane, sayıların kendisi ve toplamları nedir ?
 // bu sayılardan tek olanların kaç tane, sayıların kendisi ve toplamları nedir ?
-// secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
+
 // Dikkat: Bu algoritmayı Arrow Function ile yapalım.
 // (Clean code kuralları çercevesinde ) algoritma yapan program ?
+
+let userData = () => {
+    const userInput = Number(prompt("Lütfen bitiş sayısını giriniz"));
+    let commonSum = 0;
+    // Tek ve Çift için
+    let oddSum = 0, oddCounter = 0, oddAllNumber = "";
+    let evenSum = 0, evenCounter = 0, evenAllNumber = "";
+
+    // Loop
+    for (let i = 1; i <= userInput; i++) {
+        //  secret-Key 
+        if (commonSum == 44) {
+            console.log("secret-Key girildi çıkış yapılıyor.");
+            break;
+        }
+
+        // en fazla 50'e kadar toplama yapsın.
+        if (i == 50) {
+            console.log("sadece 1<=X<=50 arasındakileri toplayabilirim.");
+            break;
+        }
+
+        // sayılardan 7 sayıyı varsa dahil etmesin
+        if (i == 7) {
+            console.log("7 sayısı dahil edilmedi !!!");
+            continue;
+        }
+
+        // ÇİFT
+        if (i % 2 == 0) {
+            evenCounter++;
+            evenSum += i;
+            evenAllNumber = evenAllNumber + " " + i;
+        } else { //TEK
+            oddCounter++;
+            oddSum += i;
+            oddAllNumber = oddAllNumber + " " + i;
+        }
+        commonSum=commonSum+i;
+    }
+    
+    console.log("Bütün sayı toplamları: "+commonSum);
+
+    console.log("Tek sayılar: "+oddAllNumber);
+    console.log("Tek sayı adeti: "+oddCounter);
+    console.log("Tek sayılar toplamı: "+oddSum);
+
+    console.log("Çift sayılar: "+evenAllNumber);
+    console.log("Çift sayı adeti: "+evenCounter);
+    console.log("Çift sayılar toplamı: "+evenSum);
+}
+
+userData();
 
 ////////////////////////////////////////////
 // TRY CATCH
 // DIZI
 // OBJECT
+// DOM
+// Listener
+// LocalStorage
 
 // normal, anonymous, arrow , immedia function
 // Callback, Promise, Async-await
