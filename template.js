@@ -286,7 +286,7 @@ const ifElseTernaryExamples = () => {
     console.log(result);
 
 }
-ifElseTernaryExamples()
+//ifElseTernaryExamples()
 
 // if else if else
 const ifElseMultipleExamples = () => {
@@ -444,25 +444,40 @@ let userData = () => {
             oddSum += i;
             oddAllNumber = oddAllNumber + " " + i;
         }
-        commonSum=commonSum+i;
+        commonSum = commonSum + i;
     }
-    
-    console.log("Bütün sayı toplamları: "+commonSum);
 
-    console.log("Tek sayılar: "+oddAllNumber);
-    console.log("Tek sayı adeti: "+oddCounter);
-    console.log("Tek sayılar toplamı: "+oddSum);
+    console.log("Bütün sayı toplamları: " + commonSum);
 
-    console.log("Çift sayılar: "+evenAllNumber);
-    console.log("Çift sayı adeti: "+evenCounter);
-    console.log("Çift sayılar toplamı: "+evenSum);
+    console.log("Tek sayılar: " + oddAllNumber);
+    console.log("Tek sayı adeti: " + oddCounter);
+    console.log("Tek sayılar toplamı: " + oddSum);
+
+    console.log("Çift sayılar: " + evenAllNumber);
+    console.log("Çift sayı adeti: " + evenCounter);
+    console.log("Çift sayılar toplamı: " + evenSum);
 }
 
-userData();
+//userData();
 
 ////////////////////////////////////////////
 // TRY CATCH
+(() => {
+    try {
+        alertx("Deneme");
+    } catch (err) {
+        console.error(err);
+        console.error(err.name+":"+err.message);
+    } finally {
+        console.log("Db.close() Api.close() port.close()");
+    }
+    console.log("son satır");
+})();
+
+////////////////////////////////////////////
 // DIZI
+
+////////////////////////////////////////////
 // OBJECT
 // DOM
 // Listener
