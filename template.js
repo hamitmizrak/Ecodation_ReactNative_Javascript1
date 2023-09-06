@@ -609,7 +609,7 @@ let eventDom=()=>{
 
 // Submit Data
 const submitData=(e)=>{
-    console.log("datra");
+    console.log("data");
 
     // browser sen dur bir şey yapma
     //e.preventDefault();
@@ -623,7 +623,7 @@ const submitData=(e)=>{
     let passwordLocal=localStorage.setItem("password_unique",password);
     console.log(localStorage.getItem("email_unique"));
     console.log(localStorage.getItem("password_unique"));
-    alert("Tamamdır")
+    alert("Tamamdır");
 }
 
 
