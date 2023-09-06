@@ -500,28 +500,30 @@ let myArray = () => {
     //     document.writeln(temp + " ")
     // }
     // document.writeln("<br/>")
-    array.push(88);
-    array.unshift(11);
+    // array.push(88);
+    // array.unshift(11);
 
-    array.pop();
-    //array.pop();
-    array.shift();
+    // array.pop();
+    // //array.pop();
+    // array.shift();
 
-    array.sort();
-    array.sort().reverse();
+    // array.sort();
+    // array.sort().reverse();
 
-    let result=array.toString().split(",");
-    console.log(result);
+    // let result=array.toString().split(",");
+    // console.log(result);
 
-    delete array[0];
-    delete array[array.length-1];
+    //delete array[0];
+    //delete array[array.length-1];
+
+    // splice
+    // 3: indis numarası
+    // 2: silinecek sayısı
+    array.splice(3,9);
 
     for (let temp of array) {
         document.writeln(temp + " ")
     }
-
-  
-
 }
 myArray()
 
