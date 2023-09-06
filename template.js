@@ -571,11 +571,63 @@ let objectConstructor = () => {
         this.soyadi = soyadi;
         console.log(this);
     }
-    let data=new Person("Hamit","Mızrak");
+    let data = new Person("Hamit", "Mızrak");
 }
-objectConstructor();
+//objectConstructor();
 
 // JSON
+
+let objeJson = () => {
+    let object = {
+        "name": "Adım",
+        "surname": "Soyadım"
+    };
+
+    let value = JSON.stringify(object);
+    console.log(value);
+
+    let pars = JSON.parse(value);
+    console.log(pars);
+}
+//objeJson();
+
+// Event
+let eventData = () => {
+    alert("Event");
+}
+
+// Dom
+let eventDom=()=>{
+    //alert("Dom");
+   let data= document.getElementById("parag_id");
+   data.innerHTML="<b>Veriler değişti</b>";
+   //data.innerText="<b>Veriler değişti</b>";
+   data.style.color="red";
+   data.style.backgroundColor="black";
+   data.style.padding="1rem";
+}
+
+// Submit Data
+const submitData=(e)=>{
+    console.log("datra");
+
+    // browser sen dur bir şey yapma
+    //e.preventDefault();
+
+    //alert("çalıştı")
+    let email=document.getElementById("email_id").value;
+    let password=document.getElementById("password_id").value;
+    //console.log("Email: "+email+" Şifre: "+password);
+
+    let emailLocal= localStorage.setItem("email_unique",email);
+    let passwordLocal=localStorage.setItem("password_unique",password);
+    console.log(localStorage.getItem("email_unique"));
+    console.log(localStorage.getItem("password_unique"));
+    alert("Tamamdır")
+}
+
+
+
 
 ////////////////////////////////////////////
 // DOM
