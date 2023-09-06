@@ -466,19 +466,69 @@ let userData = () => {
     try {
         alertx("Deneme");
     } catch (err) {
-        console.error(err);
-        console.error(err.name+":"+err.message);
+        //console.error(err);
+        //console.error(err.name+":"+err.message);
     } finally {
-        console.log("Db.close() Api.close() port.close()");
+        //console.log("Db.close() Api.close() port.close()");
     }
-    console.log("son satır");
+    // console.log("son satır");
 })();
 
 ////////////////////////////////////////////
 // DIZI
+let myArray = () => {
+    //let array = [5, 9, 1, 2, "malatya", true, 44.23];
+    let array = [5, 9, 1, 2, 5, 3, 90];
+    // console.log(array);
+    // console.log(array[0]);
+    // console.log(array[7-1]);
+    // console.log(array[array.length-1]);
+
+    // iterative for
+    for (let i = 0; i < array.length; i++) {
+        document.writeln(array[i] + " ")
+    }
+
+    document.writeln("<br/>")
+    // for in: index
+    // for (let temp in array) {
+    //     document.writeln(temp + " =>"+array[temp]+"<br/>")
+    // }
+    // document.writeln("<br/>")
+    // for in: index
+    // for (let temp of array) {
+    //     document.writeln(temp + " ")
+    // }
+    // document.writeln("<br/>")
+    array.push(88);
+    array.unshift(11);
+
+    array.pop();
+    //array.pop();
+    array.shift();
+
+    array.sort();
+    array.sort().reverse();
+
+    let result=array.toString().split(",");
+    console.log(result);
+
+    delete array[0];
+    delete array[array.length-1];
+
+    for (let temp of array) {
+        document.writeln(temp + " ")
+    }
+
+  
+
+}
+myArray()
 
 ////////////////////////////////////////////
 // OBJECT
+
+////////////////////////////////////////////
 // DOM
 // Listener
 // LocalStorage
@@ -487,6 +537,15 @@ let userData = () => {
 // Callback, Promise, Async-await
 // ES5
 // ES6
+
+////////////////////////////////////////////
+
+// Kurulum Videosu
+// VS code
+// Node js
+// Android Studio
+// React Native
+
 ////////////////////////////////////////////
 
 
