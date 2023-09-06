@@ -527,6 +527,23 @@ let myArray = () => {
 }
 // myArray();
 
+// Konum Örneği Function
+let geolocationFunction = () => {
+    console.log("Geo Location");
+    if (window.navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((positionData) => {
+            const { latitude, longitude } = positionData.coords;
+            console.log(latitude, longitude);
+            console.log("Enlem:" + latitude, longitude);
+            console.log("Boylam:" + longitude);
+        }, (err) => {
+            console.error("Hata var Konum açılmamıştır.");
+            console.error(err);
+        })
+    }
+}
+//geolocationFunction();
+
 ////////////////////////////////////////////
 // OBJECT
 const objectData = () => {
@@ -534,8 +551,8 @@ const objectData = () => {
         "name": "Hamit",
         "surname": "Mızrak",
         isLogin: true,
-        fullName:function(){
-            return this.name+" "+this.surname;
+        fullName: function () {
+            return this.name + " " + this.surname;
         }
     };
     console.log(person);
@@ -543,10 +560,22 @@ const objectData = () => {
     console.log(person["name"]);
     console.log(person.fullName());
 
-    person.tcNumber="11222333";
+    person.tcNumber = "11222333";
     console.log(person.tcNumber);
 }
-objectData();
+// objectData();
+
+let objectConstructor = () => {
+    let Person = function (adi, soyadi) {
+        this.adi = adi;
+        this.soyadi = soyadi;
+        console.log(this);
+    }
+    let data=new Person("Hamit","Mızrak");
+}
+objectConstructor();
+
+// JSON
 
 ////////////////////////////////////////////
 // DOM
