@@ -513,28 +513,47 @@ let myArray = () => {
     // let result=array.toString().split(",");
     // console.log(result);
 
-    //delete array[0];
-    //delete array[array.length-1];
+    // delete array[0];
+    // delete array[array.length-1];
 
     // splice
     // 3: indis numarası
     // 2: silinecek sayısı
-    array.splice(3,9);
+    array.splice(3, 9);
 
     for (let temp of array) {
         document.writeln(temp + " ")
     }
 }
-myArray()
+// myArray();
 
 ////////////////////////////////////////////
 // OBJECT
+const objectData = () => {
+    let person = {
+        "name": "Hamit",
+        "surname": "Mızrak",
+        isLogin: true,
+        fullName:function(){
+            return this.name+" "+this.surname;
+        }
+    };
+    console.log(person);
+    console.log(person.name);
+    console.log(person["name"]);
+    console.log(person.fullName());
+
+    person.tcNumber="11222333";
+    console.log(person.tcNumber);
+}
+objectData();
 
 ////////////////////////////////////////////
 // DOM
 // Listener
 // LocalStorage
 
+////////////////////////////////////////////
 // normal, anonymous, arrow , immedia function
 // Callback, Promise, Async-await
 // ES5
