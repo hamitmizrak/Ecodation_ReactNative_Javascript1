@@ -1,0 +1,23 @@
+node -v 
+npm -v
+
+# gitignore 
+cat >> .gitignore
+
+
+npm install paketAdi
+npm unistall paketAdi 
+npm search paketAdi
+
+npm update -g npm
+
+# package.json oluşturur.
+npm init -y
+cat >> index.js
+
+# package-lock.json | node_modules
+npm i webpack --save-dev
+npm install webpack-cli --save-dev 
+npm install webpack-dev-server --save-dev
+
+npm run dev
