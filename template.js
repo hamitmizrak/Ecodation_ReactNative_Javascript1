@@ -79,18 +79,18 @@
 // let data10;
 // console.log(data10);
 
-// // NaN: Not A Number
+// NaN: Not A Number
 // console.log(10/10);
 // console.log(10/"10");
 // console.log(10/"asd");
 
-// // infinity
+// infinity
 // console.log(0/45);
 // console.log(45/0);
 
 ////////////////////////////////////////////
 
-// // Math
+// Math
 // console.log(Math.min(1,5,2,-100,500));
 // console.log(Math.max(1,5,2,-100,500));
 // console.log(Math.sqrt(25));
@@ -104,7 +104,6 @@
 // console.log(Math.round(3.5));
 // console.log(Math.floor(Math.random()*9+1));
 ////////////////////////////////////////////
-
 
 // Örnek-1
 // Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ? (prompt)
@@ -126,7 +125,8 @@
 // Örnek-3
 // y=3x+4k ==> 1.dereceden 2 bilinmeyenli denklem algoritma JS kodu yazınız ?
 // Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
-// // x=2 k=3 y=? (y=18)
+
+// x=2 k=3 y=? (y=18)
 // let x=0,y=0,k=0;
 // x=Number(prompt("Lütfen X giriniz"));
 // k=Number(prompt("Lütfen K giriniz"));
@@ -146,7 +146,6 @@
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ? (abs(min))
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım(pow(min,max))
 
-
 ////////////////////////////////////////////
 
 // SAYILAR
@@ -164,15 +163,18 @@
 // let bilimselGosterim2=12E+3;
 // console.log(bilimselGosterim2);
 ////////////////////////////////////////////
+
 // CAST
 // let sayi=Number("10");
+// let sayi=parseInt("10");
+// let sayi=parseFloat("10");
 // console.log(sayi+20);
 
 // let sayi2=String("10");
 // console.log(sayi2+20);
 
 ////////////////////////////////////////////
-// // STRING
+// STRING
 // let kelime="JS öğreniyorum JS ";
 // console.log(kelime);
 // console.log(kelime.length);
@@ -284,7 +286,6 @@ const ifElseTernaryExamples = () => {
     let number = 15;
     let result = (number > 0) ? "pozitif" : "negatif";
     console.log(result);
-
 }
 //ifElseTernaryExamples()
 
@@ -339,7 +340,6 @@ const switchMultipleExamples = () => {
 // continue: 1 kere o şarta çalışmaz sonra döngüye devam eder.
 
 // ÖDEV
-// ÖDEV: 
 // Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
 // (Dikkat: normal  function ile yazınız)
 
@@ -358,6 +358,7 @@ const switchMultipleExamples = () => {
 //     }
 //     document.write("<br/>")
 // })();
+
 // sonsuz for 
 // for(;;){}
 
@@ -576,7 +577,6 @@ let objectConstructor = () => {
 //objectConstructor();
 
 // JSON
-
 let objeJson = () => {
     let object = {
         "name": "Adım",
@@ -595,6 +595,12 @@ let objeJson = () => {
 let eventData = () => {
     alert("Event");
 }
+
+////////////////////////////////////////////
+// DOM
+// Listener
+// LocalStorage
+
 
 // Dom
 let eventDom=()=>{
@@ -626,11 +632,6 @@ const submitData=(e)=>{
     alert("Tamamdır");
 }
 
-
-////////////////////////////////////////////
-// DOM
-// Listener
-// LocalStorage
 
 ////////////////////////////////////////////
 // normal, anonymous, arrow , immedia function
